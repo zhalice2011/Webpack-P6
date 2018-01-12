@@ -1,6 +1,16 @@
 // 全局函数、初始化、判断等
 
 // 依赖 global, util, ane, baby, dust, fruit, halo, mom, score, wave
+var global = require('./global')
+var util = require('./util')
+var Ane = require('./ane')
+var Fruit = require('./fruit')
+var Baby = require('./baby')
+var Dust = require('./dust')
+var Halo = require('./halo')
+var Mom = require('./mom')
+var Score = require('./score')
+var Wave = require('./wave')
 
 var aneOb;
 var fruitOb;
@@ -154,3 +164,4 @@ Controller.momFoodBaby = function(){    //判断大鱼和小鱼之间的距离�
   }
 }
 
+module.exports = Controller;

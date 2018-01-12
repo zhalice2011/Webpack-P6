@@ -1,6 +1,7 @@
 // 灰尘类
 
 // 依赖 global
+var global = require('./global')
 
 var ctx1 = global.ctx1;
 var imgUrl = global.imgUrl;
@@ -36,3 +37,5 @@ Dust.prototype.drawDust = function(){
     ctx1.drawImage(this.dustPic[index], this.x, this.y);
   }
 }
+
+module.exports = Dust;

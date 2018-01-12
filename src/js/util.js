@@ -42,3 +42,4 @@ var util = {
 }
 
 // 暴露 util
+module.exports = util

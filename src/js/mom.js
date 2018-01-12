@@ -1,6 +1,8 @@
 // 鱼妈妈类
 
 // 依赖 global, util
+var global = require('./global')
+var util = require('./util')
 
 var ctx1 = global.ctx1;
 var imgUrl = global.imgUrl;
@@ -95,3 +97,5 @@ Mom.prototype.drawMom = function(){
   ctx1.drawImage(momEyeImage, -momEyeImage.width * 0.5, -momEyeImage.height * 0.5);
   ctx1.restore();   //操作完后返回到之前的画布
 }
+
+module.exports = Mom;

@@ -1,6 +1,7 @@
 // 大鱼喂小鱼的光环类
 
 // 依赖 global
+var global = require('./global')
 
 var ctx1 = global.ctx1;
 var canWid = global.canWid;
@@ -53,3 +54,5 @@ Halo.prototype.born = function(){
     }
   }
 }
+
+module.exports = Halo;

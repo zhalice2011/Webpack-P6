@@ -25,3 +25,5 @@ var global = {
   dustOb: {},
   diffframetime: 0,
 }
+
+module.exports = global
